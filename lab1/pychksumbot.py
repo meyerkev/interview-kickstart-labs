@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 #
-
 import hashlib
 import urllib.request
-
 
 # variables
 server = "http://msg2.kandek.com"
