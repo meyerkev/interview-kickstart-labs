@@ -11,7 +11,7 @@ We don't strictly need this specific container, but I use it later in the presen
 3. In Container 1 and Container 2:
 
 ```bash
-docker run -it python3.11 bash
+docker run -it python:3.11 bash
 ```
 
 This will create two new containers running a bash shell
