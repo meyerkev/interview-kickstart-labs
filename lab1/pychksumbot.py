@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 #
 import hashlib
+import os
 import urllib.request
 
 # variables
@@ -24,6 +25,7 @@ def put_hash(u,h):
   except:
     return "Error in URL retrieval"
 
+
 # main
 urls = ['https://en.wikipedia.org',
         'https://el.wikipedia.org',
@@ -31,3 +33,4 @@ urls = ['https://en.wikipedia.org',
 for url in urls:
     urlhash = get_hash(url)
     put_hash(url,urlhash)
+print(os.environ.get("IK"))
