@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #
 # demo service that calulates simple arithmetic expressions
 # example: 2+3 (2+3)*7 etc

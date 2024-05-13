@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 python:latest
+FROM python:3.11
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt && rm requirements.txt
 COPY server.py /

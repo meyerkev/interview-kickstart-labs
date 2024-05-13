@@ -1,6 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
+  namespace: calc
   name: calc
 spec:
   selector:

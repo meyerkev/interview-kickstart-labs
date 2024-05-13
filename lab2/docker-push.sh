@@ -3,7 +3,7 @@ docker build --no-cache -t calc .
 docker tag calc meyerkev248/calc:test
 docker push meyerkev248/calc:test
 
-kubectl create namespace calc
+kubectl apply -f namespace.yaml
 kubectl config set-context --current --namespace=calc
 
 kubectl apply -f .
