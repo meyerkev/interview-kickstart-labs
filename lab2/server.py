@@ -286,7 +286,7 @@ class CalcServer(BaseHTTPRequestHandler):
 				self.end_headers()
 
 		if "/healthz" != self.path[0:8] and "/metrics" != self.path[0:8]:
-		   fill_duration_bucket(time.time() - start)
+			fill_duration_bucket(time.time() - start)
 
 
 	def do_POST(self):
